@@ -1,0 +1,95 @@
+body {
+    background: url('https://img.freepik.com/free-vector/tropical-green-leaves-background_52683-37117.jpg?w=2000');
+}
+
+@font-face {
+    font-family: Berlin Sans FB;
+    src: url("./Berlin Sans FB\ Regular.ttf")
+
+}
+.container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%)
+}
+
+.title {
+    font-size: 50px;
+    font-family: Berlin Sans FB;
+    color: rgb(117, 57, 39);
+    text-align: center;
+    text-shadow: 0 0 10px #000;
+}
+
+.items {
+    display:flex;
+    flex-wrap: row wrap;
+}
+
+.item {
+    width: 200px;
+    height: 200px;
+    margin: 10px;
+    background-color: #ccc;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 50px;
+    color: #fff;
+}
+
+.item p {
+    position: absolute;
+    font-size: 30px;
+    text-align: center;
+}
+
+.item img {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+}
+
+.item img:hover {
+    opacity: 0.5;
+}
+
+.popup {
+    display: none;
+    margin: 70px auto;
+    padding: 20px;
+    background: #fff;
+    border-radius: 5px;
+    width: 30%;
+    position: relative;
+    transition: all 5s ease-in-out;
+}
+  
+.popup h2 {
+    margin-top: 0;
+    color: #333;
+    font-family: Tahoma, Arial, sans-serif;
+}
+
+.popup .close {
+    position: absolute;
+    top: 20px;
+    right: 30px;
+    transition: all 200ms;
+    font-size: 30px;
+    font-weight: bold;
+    text-decoration: none;
+    color: rgb(12, 0, 15);
+}
+
+.popup .close:hover {
+    color: #c93838;
+}
+
+.popup .content {
+    max-height: 30%;
+    overflow: auto;
+}
